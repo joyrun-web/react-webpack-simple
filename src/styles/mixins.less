@@ -1,0 +1,21 @@
+/*
+ *  style mixins
+ */
+
+.block-flex (@horizontalAlign: space-between, @verticalAlign: center) {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: @horizontalAlign;
+  justify-content: @horizontalAlign;
+  -webkit-align-items: @verticalAlign;
+  align-items: @verticalAlign;
+}
+
+.inline-flex (@horizontalAlign: space-between, @verticalAlign: center) {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: @horizontalAlign;
+  justify-content: @horizontalAlign;
+  -webkit-align-items: @verticalAlign;
+  align-items: @verticalAlign;
+}

@@ -1,0 +1,53 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "repository": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode=development --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "{{ author }}",
+  "license": "{{ license }}",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-import": "^1.7.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "style-loader": "^0.21.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    {{#if_eq cssPerprocessor "less"}}
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    {{/if_eq}}
+    {{#if_eq cssPerprocessor "sass"}}
+    "node-sass": "^4.9.2",
+    "sass": "^1.10.1",
+    "sass-loader": "^7.0.3",
+    {{/if_eq}}
+    "react-hot-loader": "^4.3.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "antd-mobile": "^2.1.11",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "core-js": "^2.0.0",
+    "normalize.css": "^4.0.0",
+    "query-string": "^5.1.1",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.4.0"
+  }
+}
