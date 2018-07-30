@@ -62,7 +62,8 @@ module.exports = {
     alias: {
       '@': path.join(__dirname, './src')
     }
-  }
+  },
+  mode: 'development'
 }
 
 if (process.env.NODE_ENV === 'production') {

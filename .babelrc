@@ -1,11 +1,10 @@
 {
   "presets": [
-    ["env", { "modules": false }],
-    "stage-3"
+    "es2015",
+    "stage-0",
+    "react"
   ],
-  "plugins": [["component", [
-    {
-      "libraryName": "mint-ui",
-      "style": true
-    }
-  ]]]
+  "plugins": [
+    ["import", { libraryName: "antd-mobile", style: 'css' }] // `style: true` 会加载 less 文件
+  ]
+}

@@ -19,7 +19,7 @@ module.exports = {
   {{/if_eq}}
   // required to lint *.vue files
   plugins: [
-    'vue'
+    'js'
   ],
   // add your custom rules here
   rules: {
