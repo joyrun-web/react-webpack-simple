@@ -17,9 +17,9 @@ class App extends Component {
     super(props);
 
     if (process.env.NODE_ENV === 'production') {
-      axios.defaults.baseURL = '//' + document.domain + '/' + 'replace_api_router';
+      axios.defaults.baseURL = '//' + document.domain + '/' + 'replace_your_api';
     } else {
-      axios.defaults.baseURL = 'http://localhost:7001/' + 'replace_api_router';
+      axios.defaults.baseURL = 'http://localhost:7001/' + 'replace_your_api';
     }
 
     // 请求拦截器
@@ -38,8 +38,6 @@ class App extends Component {
       Toast.hide()
       return Promise.reject(err)
     })
-
-    axios.get('/').then(res => console.log(res))
 
   }
 

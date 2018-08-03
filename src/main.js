@@ -14,7 +14,7 @@ const renderEl = process.env.NODE_ENV === 'development'
       <App />
     </HashRouter>
   ) : (
-    <BrowserRouter basename='/activity/gobiwalk'>
+    <BrowserRouter basename='/activity/replace_your_base_name'>
       <App />
     </BrowserRouter>
   )
